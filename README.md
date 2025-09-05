@@ -20,18 +20,8 @@ Download the pretrained ConvNext V2 - tiny here [pretrained ConvNext V2](https:/
 Model weights download：[百度网盘](https://pan.baidu.com/s/1wqXyt5-c43Qfz-JsnR4pHA).
 提取码s2t4。
 
-
-
 # Citation
-@article{zhang2023ms,
-  title={MS-IRTNet: Multistage information interaction network for RGB-T semantic segmentation},
-  author={Zhang, Zhiwei and Liu, Yisha and Xue, Weimin},
-  journal={Information Sciences},
-  volume={9},
-  pages={2440 - 2451},
-  year={2023},
-  publisher={Elsevier}
-}
+
 @article{zhang2024cigf,
   title={CIGF-net: Cross-modality interaction and global-feature fusion for RGB-t semantic segmentation},
   author={Zhang, Zhiwei and Liu, Yisha and Xue, Weimin and Zhuang, Yan},
