@@ -1,23 +1,8 @@
 # CIGF-Net
 After the publication of the paper, we will upload the source code and relevant data of CIGF-Net.
 
-
-
 # Abstract
-The complementary information from RGB and thermal images can remarkably boost semantic
-segmentation performance. Existing RGB-T segmentation methods usually use simple interaction
-strategies to extract complementary information from RGB and thermal images, which ignores
-recognizability features from different imaging mechanisms. To address these problems, we
-propose a multistage information interaction network for RGB-T semantic segmentation called
-MS-IRTNet. MS-IRTNet has a dual-stream encoder structure that can extract multistage feature
-information. To better interact with multimodal information, we design a gate-weighted
-interaction module (GWIM) and a feature information interaction module (FIIM). GWIM can
-learn multimodal information weights in different channels, while FIIM integrates and fuses
-weighted RGB and thermal information into a single feature map. Finally, multistage interactive
-information is fed into the decoder for semantic prediction. Our method achieves 60.5 mIoU on
-the MFNet dataset, outperforming state-of-the-art methods. Notably, MS-IRTNet also achieved
-state-of-the-art results in tests of daytime images (51.7 mIoU) and nighttime images (62.5 mIoU).
-The code and pre-trained models are available at https://github.com/poisonzzw/MS-IRTNet.
+RGB-T semantic segmentation aims to enhance the robustness of segmentation methods in complex environments by utilizing thermal information. To facilitate the effective interaction and fusion of multimodal information, we propose a novel Cross-modality Interaction and Global-feature Fusion Network, namely CIGF-Net. In each feature extraction stage, we propose a Cross-modality Interaction Module (CIM) to enable effective interaction between the RGB and thermal modalities. CIM utilizes channel and spatial attention mechanisms to process the feature information from both modalities. By encouraging cross-modal information exchange, the CIM facilitates the integration of complementary information and improves the overall segmentation performance. Subsequently, the Global-feature Fusion Module (GFM) is proposed to focus on fusing the information provided by the CIM. GFM assigns different weights to the multimodal features to achieve cross-modality fusion. Experimental results show that CIGF-Net achieves state-of-the-art performance on RGB-T image semantic segmentation datasets, with a remarkable 60.8 mIoU on the MFNet dataset and 86.93 mIoU on the PST900 dataset.
 
 # Requirements
 CUDA 11.2，torchvision 0.13.1，Tensorboard 2.9.0，Python 3.9，PyTorch 1.12.1。
